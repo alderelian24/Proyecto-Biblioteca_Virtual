@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Declara el documento como HTML5 y especifica el idioma español -->
+    <head>
+        <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta el ancho de la página al ancho de la pantalla del dispositivo y establece el nivel de zoom inicial -->
+        <title>Paulo Coelho - Libre Praesto</title> <!-- Define el título de la página que aparecerá en la pestaña del navegador -->
+        <link rel="stylesheet" type="text/css" href="../CSS/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
+    </head>
+
+    <body>
+		<header>
+			<div class="logo_menu">
+				<img src="../Imagenes/Logo.png" alt="Libre Praesto Logo">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="../Inicio.html">Inicio</a></li>
+					<li><a href="../PrestamoLibro.jsp">Prestamo de libros</a></li>
+					<li><a href="../HistorialPrestamo.jsp">Historial de libros</a></li>
+					<li><a href="../Contactenos.html">Soporte</a></li>
+					<li>
+						<a href="https://www.google.com" class="search-icon">
+							<img src="../Imagenes/ic_search.png" alt="Buscar" class="icon ic_buscar">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com" class="search-icon">
+							<img src="../Imagenes/ic_instagram.png" alt="Instagram" class="icon">
+						</a>
+					</li>
+						<a href="https://www.facebook.com" class="search-icon">
+							<img src="../Imagenes/ic_facebook.png" alt="Facebook" class="icon ic_face">
+						</a>
+					<li>
+						<a href="../Catalogo.html" class="btn-pedir-libro">Catálogo</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+        <main id="Titulo--autor">
+            <img src="../Imagenes/banner de inicio.jpeg" alt="Banner de la página autor">
+            <div class="Cuadrado_titutlo--autor">
+                <p>Autor</p>
+            </div>
+            <div id="Subtitulo--autor">
+                <p>Sus libros</p>
+            </div>
+        </main>
+        
+        <section class="flex flex--row">
+            <div id="Cuadrado_autor">
+                <!-- Imagen de marcador de posición, ocupa el 100% del ancho del contenedor -->
+                <img id="foto_autor" src="../Imagenes/Paulo/Paulo-Coelho.jpg" alt="Paulo Coelho">
+                <!-- Información sobre Paulo Coelho -->
+                <p id="Nombre_autor">Paulo Coelho</p>
+                <p>Paulo Coelho es uno de los escritores brasileños más leídos en el mundo, 
+                    conocido por su estilo sencillo y accesible, y sus obras que a menudo exploran 
+                    temas espirituales y filosóficos.</p>
+            </div>
+
+            <article class="grid--column">
+                <!-- Cada div "book" contiene una imagen de marcador de posición y el título de un libro -->
+                <div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Paulo/El alquimista.jpg" alt="Portada de El alquimista">
+                    <p>El alquimista</p>
+	 				<form action="../PrestamoLibro.jsp" method="post">		
+						<button class="button_AgregarLibro" type="submit" name="titulo" value= "El alquimista">
+							<input type="hidden" name="descripcion" value="La historia de Santiago, un joven pastor que busca un tesoro en las piramides de Egipto, descubriendo su leyenda personal y el significado de la vida.">
+        					<input type="hidden" name="imagen" value="Imagenes/Paulo/El alquimista.jpg"> <!-- URL de la imagen -->
+							Agregar
+						</button>
+					</form>
+                </div>
+
+                <div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Paulo/El peregrino de Compostela.jpg" alt="Portada de El peregrino de Compostela">
+                    <p>El peregrino de Compostela</p>
+	 				<form action="../PrestamoLibro.jsp" method="post">		
+						<button class="button_AgregarLibro" type="submit" name="titulo" value= "El peregrino de Compostela">
+							<input type="hidden" name="descripcion" value="Un relato autobiografico sobre el viaje de Paulo Coelho por el Camino de Santiago y las lecciones espirituales que aprende en el camino.">
+        					<input type="hidden" name="imagen" value="Imagenes/Paulo/El peregrino de Compostela.jpg"> <!-- URL de la imagen -->
+							Agregar
+						</button>
+					</form>
+                </div>
+
+                <div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Paulo/Brida.jpg" alt="Portada de Brida">
+                    <p>Brida</p>
+	 				<form action="../PrestamoLibro.jsp" method="post">		
+						<button class="button_AgregarLibro" type="submit" name="titulo" value= "Brida">
+							<input type="hidden" name="descripcion" value="La historia de una joven irlandesa en busca de conocimiento espiritual, explorando la brujeria y el amor a traves de su aprendizaje.">
+        					<input type="hidden" name="imagen" value="Imagenes/Paulo/Brida.jpg"> <!-- URL de la imagen -->
+							Agregar
+						</button>
+					</form>
+                </div>
+
+                <div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Paulo/Veronika decide morir.jpg" alt="Portada de Verónika decide morir">
+                    <p>Verónika decide morir</p>
+	 				<form action="../PrestamoLibro.jsp" method="post">		
+						<button class="button_AgregarLibro" type="submit" name="titulo" value= "Veronika decide morir">
+							<input type="hidden" name="descripcion" value="Veronika, una joven que intenta suicidarse y despierta en una clinica psiquiatrica, donde descubre las verdaderas razones para vivir.">
+        					<input type="hidden" name="imagen" value="Imagenes/Paulo/Veronika decide morir.jpg"> <!-- URL de la imagen -->
+							Agregar
+						</button>
+					</form>
+                </div>
+
+                <div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Paulo/El Maktub.jpg" alt="Portada de El Maktub">
+                    <p>El Maktub</p>
+	 				<form action="../PrestamoLibro.jsp" method="post">		
+						<button class="button_AgregarLibro" type="submit" name="titulo" value= "Maktub">
+							<input type="hidden" name="descripcion" value="Una coleccion de reflexiones y pensamientos inspirados en diferentes culturas y filosofias, ofreciendo lecciones de vida y sabiduria.">
+        					<input type="hidden" name="imagen" value="Imagenes/Paulo/El Maktub.jpg"> <!-- URL de la imagen -->
+							Agregar
+						</button>
+					</form>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+			<div class="logo_footer">
+				<img src="../Imagenes/Logo.png" alt="Libre Praesto Logo">
+			</div>
+            <nav id="PiePag">
+                <ul id="Submenu">
+                    <li class="LinkSubmenu"><a href="../Inicio.html">Inicio</a></li>
+                    <li class="LinkSubmenu"><a href="../PrestamoLibro.jsp">Pedir Libros</a></li>
+                    <li class="LinkSubmenu"><a href="../HistorialPrestamo.jsp">Historial de Prestamos</a></li>
+                    <li class="LinkSubmenu"><a href="../Contactenos.html">Soporte</a></li>
+                </ul>
+				<a href="../login.html" class="logout-link">Logout</a>
+				<p id="copyright">© 2024 Libre Praesto. Todos los derechos reservados.</p>	
+			</nav>
+		</footer>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Editorial Mondadori - Libre Praesto</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
+    </head>
+
+    <body>
+		<header>
+			<div class="logo_menu">
+				<img src="../Imagenes/Logo.png" alt="Libre Praesto Logo">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="../Inicio.html">Inicio</a></li>
+					<li><a href="../PrestamoLibro.jsp">Prestamo de libros</a></li>
+					<li><a href="../HistorialPrestamo.jsp">Historial de libros</a></li>
+					<li><a href="../Contactenos.html">Soporte</a></li>
+					<li>
+						<a href="https://www.google.com" class="search-icon">
+							<img src="../Imagenes/ic_search.png" alt="Buscar" class="icon ic_buscar">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com" class="search-icon">
+							<img src="../Imagenes/ic_instagram.png" alt="Instagram" class="icon">
+						</a>
+					</li>
+						<a href="https://www.facebook.com" class="search-icon">
+							<img src="../Imagenes/ic_facebook.png" alt="Facebook" class="icon ic_face">
+						</a>
+					<li>
+						<a href="../Catalogo.html" class="btn-pedir-libro">Catalogo</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="Titulo--autor">
+            <img src="../Imagenes/banner de inicio.jpeg" alt="Banner de la página autor">
+            <div class="Cuadrado_titutlo--autor">
+                <p>Editorial</p>
+            </div>
+            <div id="Subtitulo--autor">
+                <p>Sus libros</p>
+            </div>
+        </main>
+
+		<section class="flex flex--row">
+            <div id="Cuadrado_autor">
+                <!-- Imagen de marcador de posición, ocupa el 100% del ancho del contenedor -->
+                <img id="foto_autor" src="../Imagenes/Mondadori/Mondadori.jpg" alt="Mondadori">
+                <!-- Información sobre Mondadori-->
+                <p id="Nombre_autor">Editorial Mondadori </p>
+                <p>Mondadori es una destacada editorial italiana fundada en 1907, reconocida por su amplia gama de publicaciones que incluyen literatura, ensayo, y obras académicas.
+					Su catálogo abarca tanto autores internacionales como locales, promoviendo la difusión cultural y el pensamiento crítico.</p>
+            </div>
+
+            <article class="grid--column">
+                <!-- Cada div "book" contiene una imagen de marcador de posición y el título de un libro -->
+                <div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Mondadori/memorias de mi.jpg" alt="Memorias de mis putas tristes">
+                    <p>Memorias de mis putas tristes</p>
+                    <form action="../PrestamoLibro.jsp" method="post">	
+						<button class="button_AgregarLibro" type="submit" name="titulo" value= "Memoria de mis putas tristes">
+							<input type="hidden" name="descripcion" value=" La historia de un anciano periodista que se enamora por primera vez de una joven prostituta en su cumpleanos numero noventa. ">
+        					<input type="hidden" name="imagen" value="Imagenes/Mondadori/memorias de mi.jpg"> <!-- URL de la imagen -->
+							Agregar
+						</button>
+					</form> 
+                </div>
+            </article>
+        </section>
+
+		<footer>
+			<div class="logo_footer">
+				<img src="../Imagenes/Logo.png" alt="Libre Praesto Logo">
+			</div>
+            <nav id="PiePag">
+                <ul id="Submenu">
+                    <li class="LinkSubmenu"><a href="../Inicio.html">Inicio</a></li>
+                    <li class="LinkSubmenu"><a href="../PrestamoLibro.jsp">Pedir Libros</a></li>
+                    <li class="LinkSubmenu"><a href="../HistorialPrestamo.jsp">Historial de Prestamos</a></li>
+                    <li class="LinkSubmenu"><a href="../Contactenos.html">Soporte</a></li>
+                </ul>
+				<a href="../login.html" class="logout-link">Logout</a>
+				<p id="copyright">© 2024 Libre Praesto. Todos los derechos reservados.</p>	
+			</nav>
+		</footer>
+	</body>
+</html>

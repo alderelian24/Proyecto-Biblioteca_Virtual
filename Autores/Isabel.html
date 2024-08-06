@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Declara el documento como HTML5 y especifica el idioma español -->
+    <head>
+        <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta el ancho de la página al ancho de la pantalla del dispositivo y establece el nivel de zoom inicial -->
+        <title>Isabel Allende - Libre Praesto</title> <!-- Define el título de la página que aparecerá en la pestaña del navegador -->
+        <link rel="stylesheet" type="text/css" href="../CSS/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
+    </head>
+
+    <body>
+		<header>
+			<div class="logo_menu">
+				<img src="../Imagenes/Logo.png" alt="Libre Praesto Logo">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="../Inicio.html">Inicio</a></li>
+					<li><a href="../PrestamoLibro.jsp">Prestamo de libros</a></li>
+					<li><a href="../HistorialPrestamo.jsp">Historial de libros</a></li>
+					<li><a href="../Contactenos.html">Soporte</a></li>
+					<li>
+						<a href="https://www.google.com" class="search-icon">
+							<img src="../Imagenes/ic_search.png" alt="Buscar" class="icon ic_buscar">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com" class="search-icon">
+							<img src="../Imagenes/ic_instagram.png" alt="Instagram" class="icon">
+						</a>
+					</li>
+						<a href="https://www.facebook.com" class="search-icon">
+							<img src="../Imagenes/ic_facebook.png" alt="Facebook" class="icon ic_face">
+						</a>
+					<li>
+						<a href="../Catalogo.html" class="btn-pedir-libro">Catálogo</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+        <main id="Titulo--autor">
+            <img src="../Imagenes/banner de inicio.jpeg" alt="Banner de la página autor">
+            <div class="Cuadrado_titutlo--autor">
+                <p>Autor</p>
+            </div>
+            <div id="Subtitulo--autor">
+                <p>Sus libros</p>
+            </div>
+        </main>
+        
+        <section class="flex flex--row">
+            <div id="Cuadrado_autor">
+                <!-- Imagen de marcador de posición, ocupa el 100% del ancho del contenedor -->
+                <img id="foto_autor" src="../Imagenes/Isabel/Isabel-Allende.webp" alt="Isabel Allende">
+                <!-- Información sobre Isabel Allende -->
+                <p id="Nombre_autor">Isabel Allende </p>
+                <p>Isabel Allende es una de las escritoras más influyentes y prolíficas de América Latina, 
+                    conocida por sus novelas históricas y su estilo narrativo que a menudo incorpora elementos 
+                    autobiográficos y de realismo mágico.</p>
+            </div>
+
+            <article class="grid--column">
+                <!-- Cada div "book" contiene una imagen de marcador de posición y el título de un libro -->
+                <div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Isabel/casa de los espiritus.jpg" alt="Portada de La casa de los espíritus">
+                    <p>La casa de los espíritus</p>
+	 				<form action="../PrestamoLibro.jsp" method="post">		
+						<button class="button_AgregarLibro" type="submit" name="titulo" value= "La casa de los espiritus">
+							<input type="hidden" name="descripcion" value="Una saga familiar que mezcla realismo magico y politica, centrada en la vida de la familia Trueba a lo largo de varias generaciones.">
+        					<input type="hidden" name="imagen" value="Imagenes/Isabel/casa de los espiritus.jpg"> <!-- URL de la imagen -->
+							Agregar
+						</button>
+					</form>
+                </div>
+
+                <div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Isabel/de amor y de sombra.jpg" alt="Portada de De amor y de sombra">
+                    <p>De amor y de sombra</p>
+	 				<form action="../PrestamoLibro.jsp" method="post">		
+						<button class="button_AgregarLibro" type="submit" name="titulo" value= "De amor y de sombra">
+							<input type="hidden" name="descripcion" value="Una novela de amor y resistencia en un pais latinoamericano bajo una dictadura, protagonizada por Irene Beltran y Francisco Leal.">
+        					<input type="hidden" name="imagen" value="Imagenes/Isabel/de amor y de sombra.jpg"> <!-- URL de la imagen -->
+							Agregar
+						</button>
+					</form>
+                </div>
+
+                <div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Isabel/eva luna.jpg" alt="Portada de Eva Luna">
+                    <p>Eva Luna</p>
+	 				<form action="../PrestamoLibro.jsp" method="post">		
+						<button class="button_AgregarLibro" type="submit" name="titulo" value= "Eva Luna">
+							<input type="hidden" name="descripcion" value="La vida de Eva Luna, una joven huerfana con un talento para contar historias, en un pais sudamericano ficticio.">
+        					<input type="hidden" name="imagen" value="Imagenes/Isabel/eva luna.jpg"> <!-- URL de la imagen -->
+							Agregar
+						</button>
+					</form>
+                </div>
+
+                <div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Isabel/paula.jpg" alt="Portada de Paula">
+                    <p>Paula</p>
+	 				<form action="../PrestamoLibro.jsp" method="post">		
+						<button class="button_AgregarLibro" type="submit" name="titulo" value= "Paula">
+							<input type="hidden" name="descripcion" value="Un emotivo relato autobiografico sobre la enfermedad y muerte de la hija de la autora, Paula, mezclado con la historia de la familia Allende.">
+        					<input type="hidden" name="imagen" value="Imagenes/Isabel/paula.jpg"> <!-- URL de la imagen -->
+							Agregar
+						</button>
+					</form>
+                </div>
+
+                <div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Isabel/afrodita.jpg" alt="Portada de Afrodita">
+                    <p>Afrodita</p>
+	 				<form action="../PrestamoLibro.jsp" method="post">		
+						<button class="button_AgregarLibro" type="submit" name="titulo" value= "Afrodita">
+							<input type="hidden" name="descripcion" value="Un libro que combina ensayos y recetas sobre la comida afrodisiaca y el erotismo, explorando la sensualidad y el placer.">
+        					<input type="hidden" name="imagen" value="Imagenes/Isabel/afrodita.jpg"> <!-- URL de la imagen -->
+							Agregar
+						</button>
+					</form>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+			<div class="logo_footer">
+				<img src="../Imagenes/Logo.png" alt="Libre Praesto Logo">
+			</div>
+            <nav id="PiePag">
+                <ul id="Submenu">
+                    <li class="LinkSubmenu"><a href="../Inicio.html">Inicio</a></li>
+                    <li class="LinkSubmenu"><a href="../PrestamoLibro.jsp">Pedir Libros</a></li>
+                    <li class="LinkSubmenu"><a href="../HistorialPrestamo.jsp">Historial de Prestamos</a></li>
+                    <li class="LinkSubmenu"><a href="../Contactenos.html">Soporte</a></li>
+                </ul>
+				<a href="../login.html" class="logout-link">Logout</a>
+				<p id="copyright">© 2024 Libre Praesto. Todos los derechos reservados.</p>	
+			</nav>
+		</footer>
+    </body>
+</html>

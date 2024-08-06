@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Declara el documento como HTML5 y especifica el idioma español -->
+    <head>
+        <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta el ancho de la página al ancho de la pantalla del dispositivo y establece el nivel de zoom inicial -->
+        <title>Carlos Ruiz Zafón - Libre Praesto</title> <!-- Define el título de la página que aparecerá en la pestaña del navegador -->
+        <link rel="stylesheet" type="text/css" href="../CSS/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
+    </head>
+
+    <body>
+		<header>
+			<div class="logo_menu">
+				<img src="../Imagenes/Logo.png" alt="Libre Praesto Logo">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="../Inicio.html">Inicio</a></li>
+					<li><a href="../PrestamoLibro.jsp">Prestamo de libros</a></li>
+					<li><a href="../HistorialPrestamo.jsp">Historial de libros</a></li>
+					<li><a href="../Contactenos.html">Soporte</a></li>
+					<li>
+						<a href="https://www.google.com" class="search-icon">
+							<img src="../Imagenes/ic_search.png" alt="Buscar" class="icon ic_buscar">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com" class="search-icon">
+							<img src="../Imagenes/ic_instagram.png" alt="Instagram" class="icon">
+						</a>
+					</li>
+						<a href="https://www.facebook.com" class="search-icon">
+							<img src="../Imagenes/ic_facebook.png" alt="Facebook" class="icon ic_face">
+						</a>
+					<li>
+						<a href="../Catalogo.html" class="btn-pedir-libro">Catálogo</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+        <main id="Titulo--autor">
+            <img src="../Imagenes/banner de inicio.jpeg" alt="Banner de la página autor">
+            <div class="Cuadrado_titutlo--autor">
+                <p>Autor</p>
+            </div>
+            <div id="Subtitulo--autor">
+                <p>Sus libros</p>
+            </div>
+        </main>
+
+        <section class="flex flex--row">
+            <div id="Cuadrado_autor">
+                <img id="foto_autor" src="../Imagenes/Carlos/Carlos_Ruiz_Zafón.jpeg" alt="Carlos Ruiz Zafón"> <!-- Imagen de marcador de posición, ocupa el 100% del ancho del contenedor -->
+                <p id="Nombre_autor">Carlos Ruiz Zafón </p> <!-- Nombre del autor -->
+                <p>Carlos Ruiz Zafón fue un escritor y guionista español, conocido por sus novelas 
+                    de misterio y su narrativa cautivadora. Su serie más famosa, "El Cementerio de los Libros 
+                    Olvidados", ha sido traducida a numerosos idiomas y ha ganado reconocimiento mundial.</p> <!-- Descripción del autor -->
+            </div>
+
+            <article class="grid--column">
+                <!-- Cada div "book" contiene una imagen de marcador de posición y el título de un libro -->
+                <div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Carlos/La sombra del viento.jpg" alt="Portada de La sombra del viento"> <!-- Imagen del libro -->
+                    <p>La sombra del viento</p> <!-- Título del libro -->
+	 				<form action="../PrestamoLibro.jsp" method="post">		
+						<button class="button_AgregarLibro" type="submit" name="titulo" value= "La sombra del viento">
+							<input type="hidden" name="descripcion" value="La historia de Daniel Sempere, que descubre un misterioso libro en el Cementerio de los Libros Olvidados y se ve envuelto en un misterio literario.">
+        					<input type="hidden" name="imagen" value="Imagenes/Carlos/La sombra del viento.jpg"> <!-- URL de la imagen -->
+							Agregar
+						</button>
+					</form>
+                </div>
+
+                <div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Carlos/El juego del angel.jpg" alt="Portada de El juego del ángel">
+                    <p>El juego del ángel</p>
+	 				<form action="../PrestamoLibro.jsp" method="post">		
+						<button class="button_AgregarLibro" type="submit" name="titulo" value= "El juego del angel">
+							<input type="hidden" name="descripcion" value="Un joven escritor, David Martín, recibe una oferta para escribir un libro que le cambiara la vida, envuelto en un oscuro y misterioso entramado.">
+        					<input type="hidden" name="imagen" value="Imagenes/Carlos/El juego del angel.jpg"> <!-- URL de la imagen -->
+							Agregar
+						</button>
+					</form>
+				</div>
+
+                <div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Carlos/El prisionero del cielo.jpg" alt="Portada de El prisionero del cielo">
+                    <p>El prisionero del cielo</p>
+	 				<form action="../PrestamoLibro.jsp" method="post">		
+						<button class="button_AgregarLibro" type="submit" name="titulo" value= "El prisionero del cielo">
+							<input type="hidden" name="descripcion" value="Continua la saga de Daniel Sempere y Fermin Romero de Torres, revelando secretos del pasado y enfrentando nuevos peligros.">
+        					<input type="hidden" name="imagen" value="Imagenes/Carlos/El prisionero del cielo.jpg"> <!-- URL de la imagen -->
+							Agregar
+						</button>
+					</form>
+                </div>
+
+                <div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Carlos/El laberinto de los espíritus.jpg" alt="Portada de El laberinto de los espíritus">
+                    <p>El laberinto de los espíritus</p>
+	 				<form action="../PrestamoLibro.jsp" method="post">		
+						<button class="button_AgregarLibro" type="submit" name="titulo" value= "El laberinto de los espiritus">
+							<input type="hidden" name="descripcion" value="La conclusion de la saga del Cementerio de los Libros Olvidados, con Alicia Gris desentranando secretos y conectando todos los hilos de la historia.">
+        					<input type="hidden" name="imagen" value="Imagenes/Carlos/El laberinto de los espíritus.jpg"> <!-- URL de la imagen -->
+							Agregar
+						</button>
+					</form>
+                </div>
+
+                <div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Carlos/Marina.jpg" alt="Portada de Marina">
+                    <p>Marina</p>
+	 				<form action="../PrestamoLibro.jsp" method="post">		
+						<button class="button_AgregarLibro" type="submit" name="titulo" value= "Marina">
+							<input type="hidden" name="descripcion" value="La historia de Oscar Drai, un joven que se embarca en una aventura sobrenatural en la Barcelona de los anos setenta.">
+        					<input type="hidden" name="imagen" value="Imagenes/Carlos/Marina.jpg"> <!-- URL de la imagen -->
+							Agregar
+						</button>
+					</form>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+			<div class="logo_footer">
+				<img src="../Imagenes/Logo.png" alt="Libre Praesto Logo">
+			</div>
+            <nav id="PiePag">
+                <ul id="Submenu">
+                    <li class="LinkSubmenu"><a href="../Inicio.html">Inicio</a></li>
+                    <li class="LinkSubmenu"><a href="../PrestamoLibro.jsp">Pedir Libros</a></li>
+                    <li class="LinkSubmenu"><a href="../HistorialPrestamo.jsp">Historial de Prestamos</a></li>
+                    <li class="LinkSubmenu"><a href="../Contactenos.html">Soporte</a></li>
+                </ul>
+				<a href="../login.html" class="logout-link">Logout</a>
+				<p id="copyright">© 2024 Libre Praesto. Todos los derechos reservados.</p>	
+			</nav>
+		</footer>
+    </body>
+</html>

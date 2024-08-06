@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Editorial Seix Barral - Libre Praesto</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
+    </head>
+
+    <body>
+		<header>
+			<div class="logo_menu">
+				<img src="../Imagenes/Logo.png" alt="Libre Praesto Logo">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="../Inicio.html">Inicio</a></li>
+					<li><a href="../PrestamoLibro.jsp">Prestamo de libros</a></li>
+					<li><a href="../HistorialPrestamo.jsp">Historial de libros</a></li>
+					<li><a href="../Contactenos.html">Soporte</a></li>
+					<li>
+						<a href="https://www.google.com" class="search-icon">
+							<img src="../Imagenes/ic_search.png" alt="Buscar" class="icon ic_buscar">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com" class="search-icon">
+							<img src="../Imagenes/ic_instagram.png" alt="Instagram" class="icon">
+						</a>
+					</li>
+						<a href="https://www.facebook.com" class="search-icon">
+							<img src="../Imagenes/ic_facebook.png" alt="Facebook" class="icon ic_face">
+						</a>
+					<li>
+						<a href="../Catalogo.html" class="btn-pedir-libro">Catalogo</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="Titulo--autor">
+            <img src="../Imagenes/banner de inicio.jpeg" alt="Banner de la página autor">
+            <div class="Cuadrado_titutlo--autor">
+                <p>Editorial</p>
+            </div>
+            <div id="Subtitulo--autor">
+                <p>Sus libros</p>
+            </div>
+        </main>
+
+		<section class="flex flex--row">
+            <div id="Cuadrado_autor">
+                <!-- Imagen de marcador de posición, ocupa el 100% del ancho del contenedor -->
+                <img id="foto_autor" src="../Imagenes/SeixBarral/Seix Barral.png" alt="Seix Barral">
+                <!-- Información sobre Planeta -->
+                <p id="Nombre_autor">Editorial Seix Barral </p>
+                <p>Seix Barral es una renombrada editorial española fundada en 1911, conocida por su compromiso con la calidad literaria y la innovación editorial.
+					 Publica obras de destacados autores contemporáneos y clásicos, contribuyendo significativamente a la literatura en español.</p>
+            </div>
+
+            <article class="grid--column">
+                <!-- Cada div "book" contiene una imagen de marcador de posición y el título de un libro -->
+                <div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/SeixBarral/conversacion en la catedral.jpg" alt="Conversacion en la catedral">
+                    <p>Conversacion en la catedral</p>
+                    <form action="../PrestamoLibro.jsp" method="post">	
+                        <button class="button_AgregarLibro" type="submit" name="titulo" value= "Conversacion en la catedral">
+                            <input type="hidden" name="descripcion" value="Un analisis profundo de la sociedad peruana bajo la dictadura de Odria, a traves de una conversacion entre dos antiguos amigos.">
+        					<input type="hidden" name="imagen" value="Imagenes/SeixBarral/conversacion en la catedral.jpg"> <!-- URL de la imagen -->
+                            Agregar
+                        </button>
+                    </form> 
+                </div>
+
+				<div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/SeixBarral/la casa verde.jpeg" alt="La casa verde">
+                    <p>La casa verde</p>
+                    <form action="../PrestamoLibro.jsp" method="post">	
+                        <button class="button_AgregarLibro" type="submit" name="titulo" value= "La casa verde">
+                            <input type="hidden" name="descripcion" value="La historia de una casa de citas en la selva peruana y sus efectos en las vidas de varios personajes a lo largo de las decadas.">
+        					<input type="hidden" name="imagen" value="Imagenes/SeixBarral/la casa verde.jpeg"> <!-- URL de la imagen -->
+                            Agregar
+                        </button>
+                    </form> 
+                </div>
+
+				<div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/SeixBarral/la ciudad y los perros.jpeg" alt="La ciudad y los perros">
+                    <p>La ciudad y los perros</p>
+	 				<form action="../PrestamoLibro.jsp" method="post">		
+						<button class="button_AgregarLibro" type="submit" name="titulo" value= "La ciudad y los perros">
+							<input type="hidden" name="descripcion" value="Un retrato crudo y realista de la vida en un internado militar en Lima, explorando la violencia y la corrupcion.">
+        					<input type="hidden" name="imagen" value="Imagenes/SeixBarral/la ciudad y los perros.jpeg"> <!-- URL de la imagen -->
+							Agregar
+						</button>
+					</form>
+                </div>
+
+				<div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/SeixBarral/La tía Julia y el escribidor.jpg" alt="La tía Julia y el escribidor">
+                    <p>La tía Julia y el escribidor</p>
+	 				<form action="../PrestamoLibro.jsp" method="post">		
+						<button class="button_AgregarLibro" type="submit" name="titulo" value= "La tía Julia y el escribidor">
+							<input type="hidden" name="descripcion" value="Una novela semi-autobiografica sobre la relacion del joven escritor Marito con su tia politica Julia y su mentor literario Pedro Camacho.">
+        					<input type="hidden" name="imagen" value="Imagenes/SeixBarral/La tía Julia y el escribidor.jpg"> <!-- URL de la imagen -->
+							Agregar
+						</button>
+					</form>
+                </div>
+
+				<div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/SeixBarral/pantaleon y las visitadoras.jpg" alt="Pantaleon y las visitadoras">
+                    <p>Pantaleon y las visitadoras</p>
+                    <form action="../PrestamoLibro.jsp" method="post">	
+                        <button class="button_AgregarLibro" type="submit" name="titulo" value= "Pantaleon y las visitadoras">
+                            <input type="hidden" name="descripcion" value="Una satira sobre la burocracia militar y la moralidad, protagonizada por el capitan Pantaleon Pantoja y su mision secreta.">
+        					<input type="hidden" name="imagen" value="Imagenes/SeixBarral/pantaleon y las visitadoras.jpg"> <!-- URL de la imagen -->
+                            Agregar
+                        </button>
+                    </form> 
+                </div>
+
+                <div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/SeixBarral/El pez en el agua.jpg" alt="El pez en el agua">
+                    <p>El pez en el agua</p>
+                    <form action="../PrestamoLibro.jsp" method="post">	
+                        <button class="button_AgregarLibro" type="submit" name="titulo" value= "El pez en el agua">
+                            <input type="hidden" name="descripcion" value="Una autobiografia que abarca la infancia de Vargas Llosa y su campana presidencial en Peru.">
+        					<input type="hidden" name="imagen" value="Imagenes/SeixBarral/El pez en el agua.jpg"> <!-- URL de la imagen -->
+                            Agregar
+                        </button>
+                    </form> 
+                </div>
+
+                <div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/SeixBarral/la guerra del fin del mundo.jpg" alt="La guerra del fin del mundo">
+                    <p>La guerra del fin del mundo</p>
+                    <form action="../PrestamoLibro.jsp" method="post">	
+                        <button class="button_AgregarLibro" type="submit" name="titulo" value= "La guerra del fin del mundo">
+                            <input type="hidden" name="descripcion" value="Una recreación épica de la Guerra de Canudos en Brasil, donde un grupo de rebeldes se enfrenta al gobierno republicano.">
+        					<input type="hidden" name="imagen" value="Imagenes/SeixBarral/la guerra del fin del mundo.jpg"> <!-- URL de la imagen -->
+                            Agregar
+                        </button>
+                    </form> 
+                </div>
+
+                <div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/SeixBarral/Lituma en los andes.jpg" alt="Lituma en los andes">
+                    <p>Lituma en los andes</p>
+                    <form action="../PrestamoLibro.jsp" method="post">	
+                        <button class="button_AgregarLibro" type="submit" name="titulo" value= "Lituma en los Andes">
+                            <input type="hidden" name="descripcion" value="El teniente Lituma investiga la desaparicion de tres hombres en una remota comunidad andina, enfrentando supersticiones y peligros.">
+        					<input type="hidden" name="imagen" value="Imagenes/SeixBarral/Lituma en los andes.jpg"> <!-- URL de la imagen -->
+                            Agregar
+                        </button>
+                    </form> 
+                </div>
+            </article>
+        </section>
+		<footer>
+			<div class="logo_footer">
+				<img src="../Imagenes/Logo.png" alt="Libre Praesto Logo">
+			</div>
+            <nav id="PiePag">
+                <ul id="Submenu">
+                    <li class="LinkSubmenu"><a href="../Inicio.html">Inicio</a></li>
+                    <li class="LinkSubmenu"><a href="../PrestamoLibro.jsp">Pedir Libros</a></li>
+                    <li class="LinkSubmenu"><a href="../HistorialPrestamo.jsp">Historial de Prestamos</a></li>
+                    <li class="LinkSubmenu"><a href="../Contactenos.html">Soporte</a></li>
+                </ul>
+				<a href="../login.html" class="logout-link">Logout</a>
+				<p id="copyright">© 2024 Libre Praesto. Todos los derechos reservados.</p>	
+			</nav>
+		</footer>
+	</body>
+</html>

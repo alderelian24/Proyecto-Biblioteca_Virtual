@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Editorial Planeta - Libre Praesto</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
+    </head>
+
+    <body>
+		<header>
+			<div class="logo_menu">
+				<img src="../Imagenes/Logo.png" alt="Libre Praesto Logo">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="../Inicio.html">Inicio</a></li>
+					<li><a href="../PrestamoLibro.jsp">Prestamo de libros</a></li>
+					<li><a href="../HistorialPrestamo.jsp">Historial de libros</a></li>
+					<li><a href="../Contactenos.html">Soporte</a></li>
+					<li>
+						<a href="https://www.google.com" class="search-icon">
+							<img src="../Imagenes/ic_search.png" alt="Buscar" class="icon ic_buscar">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com" class="search-icon">
+							<img src="../Imagenes/ic_instagram.png" alt="Instagram" class="icon">
+						</a>
+					</li>
+						<a href="https://www.facebook.com" class="search-icon">
+							<img src="../Imagenes/ic_facebook.png" alt="Facebook" class="icon ic_face">
+						</a>
+					<li>
+						<a href="../Catalogo.html" class="btn-pedir-libro">Catalogo</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="Titulo--autor">
+            <img src="../Imagenes/banner de inicio.jpeg" alt="Banner de la página autor">
+            <div class="Cuadrado_titutlo--autor">
+                <p>Editorial</p>
+            </div>
+            <div id="Subtitulo--autor">
+                <p>Sus libros</p>
+            </div>
+        </main>
+
+		<section class="flex flex--row">
+            <div id="Cuadrado_autor">
+                <!-- Imagen de marcador de posición, ocupa el 100% del ancho del contenedor -->
+                <img id="foto_autor" src="../Imagenes/Planeta/Planeta.png" alt="Planeta">
+                <!-- Información sobre Planeta -->
+                <p id="Nombre_autor">Editorial Planeta </p>
+                <p>Editorial Planeta es una prominente editorial española fundada en 1949, líder en el mundo hispanohablante por su extenso catálogo que incluye ficción, no ficción, y libros educativos.
+					 Es conocida por organizar el prestigioso Premio Planeta de Novela, uno de los galardones literarios más importantes en lengua española.</p>
+            </div>
+
+            <article class="grid--column">
+                <!-- Cada div "book" contiene una imagen de marcador de posición y el título de un libro -->
+                <div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Planeta/afrodita.jpg" alt="Afrodita">
+                    <p>Afrodita</p>
+                    <form action="../PrestamoLibro.jsp" method="post">			
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "Afrodita">
+						<input type="hidden" name="descripcion" value="Un libro que combina ensayos y recetas sobre la comida afrodisiaca y el erotismo, explorando la sensualidad y el placer. ">
+        				<input type="hidden" name="imagen" value="Imagenes/Planeta/afrodita.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form>
+                </div>
+
+				<div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Planeta/Brida.jpg" alt="Brida">
+                    <p>Brida</p>
+                    <form action="../PrestamoLibro.jsp" method="post">	
+                        <button class="button_AgregarLibro" type="submit" name="titulo" value= "Brida">
+                            <input type="hidden" name="descripcion" value="La historia de una joven irlandesa en busca de conocimiento espiritual, explorando la brujeria y el amor a traves de su aprendizaje. ">
+        					<input type="hidden" name="imagen" value="Imagenes/Planeta/Brida.jpg"> <!-- URL de la imagen -->
+                            Agregar
+                        </button>
+                    </form> 
+                </div>
+
+				<div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Planeta/casa de los espiritus.jpg" alt="La casa de los espiritus">
+                    <p>La casa de los espiritus</p>
+                    <form action="../PrestamoLibro.jsp" method="post">	
+                        <button class="button_AgregarLibro" type="submit" name="titulo" value= "La casa de los espiritus">
+                            <input type="hidden" name="descripcion" value=" Una saga familiar que mezcla realismo magico y politica, centrada en la vida de la familia Trueba a lo largo de varias generaciones. ">
+        					<input type="hidden" name="imagen" value="Imagenes/Planeta/casa de los espiritus.jpg"> <!-- URL de la imagen -->
+                            Agregar
+                        </button>
+                    </form>
+                </div>
+
+				<div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Planeta/de amor y de sombra.jpg" alt="De amor y de sombra">
+                    <p>De amor y de sombra</p>
+                    <form action="../PrestamoLibro.jsp" method="post">	
+                        <button class="button_AgregarLibro" type="submit" name="titulo" value= "De amor y de sombra">
+                            <input type="hidden" name="descripcion" value="Una novela de amor y resistencia en un pais latinoamericano bajo una dictadura, protagonizada por Irene Beltran y Francisco Leal.">
+        					<input type="hidden" name="imagen" value="Imagenes/Planeta/de amor y de sombra.jpg"> <!-- URL de la imagen -->
+                            Agregar
+                        </button>
+                    </form> 
+                </div>
+
+				<div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Planeta/El alquimista.jpg" alt="El alquimista">
+                    <p>El alquimista</p>
+                    <form action="../PrestamoLibro.jsp" method="post">	
+                        <button class="button_AgregarLibro" type="submit" name="titulo" value= "El alquimista">
+                            <input type="hidden" name="descripcion" value="La historia de Santiago, un joven pastor que busca un tesoro en las piramides de Egipto, descubriendo su leyenda personal y el significado de la vida.">
+        					<input type="hidden" name="imagen" value="Imagenes/Planeta/El alquimista.jpg"> <!-- URL de la imagen -->
+                            Agregar
+                        </button>
+                    </form> 
+                </div>
+
+				<div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Planeta/El juego del angel.jpg" alt="El juego del angel">
+                    <p>El juego del angel</p>
+                    <form action="../PrestamoLibro.jsp" method="post">	
+                        <button class="button_AgregarLibro" type="submit" name="titulo" value= "El juego del angel">
+                            <input type="hidden" name="descripcion" value="Un joven escritor, David Martin, recibe una oferta para escribir un libro que le cambiara la vida, envuelto en un oscuro y misterioso entramado.">
+        					<input type="hidden" name="imagen" value="Imagenes/Planeta/El juego del angel.jpg"> <!-- URL de la imagen -->
+                            Agregar
+                        </button>
+                    </form> 
+                </div>
+
+				<div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Planeta/El laberinto de los espíritus.jpg" alt="El laberinto de los espíritus">
+                    <p>El laberinto de los espíritus</p>
+                    <form action="../PrestamoLibro.jsp" method="post">	
+                        <button class="button_AgregarLibro" type="submit" name="titulo" value= "El laberinto de los espiritus">
+                            <input type="hidden" name="descripcion" value="La conclusion de la saga del Cementerio de los Libros Olvidados, con Alicia Gris desentranando secretos y conectando todos los hilos de la historia. ">
+        					<input type="hidden" name="imagen" value="Imagenes/Planeta/El laberinto de los espíritus.jpg"> <!-- URL de la imagen -->
+                            Agregar
+                        </button>
+                    </form> 
+                </div>
+
+				<div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Planeta/El Maktub.jpg" alt="Maktub">
+                    <p>Maktub</p>
+                    <form action="../PrestamoLibro.jsp" method="post">	
+                        <button class="button_AgregarLibro" type="submit" name="titulo" value= "Maktub">
+                            <input type="hidden" name="descripcion" value="Una coleccion de reflexiones y pensamientos inspirados en diferentes culturas y filosofias, ofreciendo lecciones de vida y sabiduria.">
+        					<input type="hidden" name="imagen" value="Imagenes/Planeta/El Maktub.jpg"> <!-- URL de la imagen -->
+                            Agregar
+                        </button>
+                    </form> 
+                </div>
+
+				<div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Planeta/El peregrino de Compostela.jpg" alt="El peregrino de Compostela">
+                    <p>El peregrino de Compostela</p>
+                    <form action="../PrestamoLibro.jsp" method="post">	
+                        <button class="button_AgregarLibro" type="submit" name="titulo" value= "El peregrino de Compostela">
+                            <input type="hidden" name="descripcion" value="Un relato autobiografico sobre el viaje de Paulo Coelho por el Camino de Santiago y las lecciones espirituales que aprende en el camino.">
+        					<input type="hidden" name="imagen" value="Imagenes/Planeta/El peregrino de Compostela.jpg"> <!-- URL de la imagen -->
+                            Agregar
+                        </button>
+                    </form> 
+                </div>
+
+				<div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Planeta/El prisionero del cielo.jpg" alt="El prisionero del cielo">
+                    <p>El prisionero del cielo</p>
+	 				<form action="../PrestamoLibro.jsp" method="post">		
+						<button class="button_AgregarLibro" type="submit" name="titulo" value= "El prisionero del cielo">
+							<input type="hidden" name="descripcion" value="Continua la saga de Daniel Sempere y Fermin Romero de Torres, revelando secretos del pasado y enfrentando nuevos peligros.">
+        					<input type="hidden" name="imagen" value="Imagenes/Planeta/El prisionero del cielo.jpg"> <!-- URL de la imagen -->
+							Agregar
+						</button>
+					</form>
+                </div>
+
+				<div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Planeta/eva luna.jpg" alt="Eva luna">
+                    <p>Eva luna</p>
+                    <form action="../PrestamoLibro.jsp" method="post">	
+                        <button class="button_AgregarLibro" type="submit" name="titulo" value= "Eva Luna">
+                            <input type="hidden" name="descripcion" value="La vida de Eva Luna, una joven huerfana con un talento para contar historias, en un pais sudamericano ficticio.">
+        					<input type="hidden" name="imagen" value="Imagenes/Planeta/eva luna.jpg"> <!-- URL de la imagen -->
+                            Agregar
+                        </button>
+                    </form> 
+                </div>
+
+				<div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Planeta/La sombra del viento.jpg" alt="La sombra del viento">
+                    <p>La sombra del viento</p>
+                    <form action="../PrestamoLibro.jsp" method="post">	
+                        <button class="button_AgregarLibro" type="submit" name="titulo" value= "La sombra del viento">
+                            <input type="hidden" name="descripcion" value="La historia de Daniel Sempere, que descubre un misterioso libro en el Cementerio de los Libros Olvidados y se ve envuelto en un misterio literario.">
+        					<input type="hidden" name="imagen" value="Imagenes/Planeta/La sombra del viento.jpg"> <!-- URL de la imagen -->
+                            Agregar
+                        </button>
+                    </form> 
+                </div>
+
+				<div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Planeta/Marina.jpg" alt="Marina">
+                    <p>Marina</p>
+                    <<form action="../PrestamoLibro.jsp" method="post">	
+                        <button class="button_AgregarLibro" type="submit" name="titulo" value= "Marina">
+                            <input type="hidden" name="descripcion" value="La historia de Oscar Drai, un joven que se embarca en una aventura sobrenatural en la Barcelona de los anos setenta. ">
+        					<input type="hidden" name="imagen" value="Imagenes/Planeta/Marina.jpg"> <!-- URL de la imagen -->
+                            Agregar
+                        </button>
+                    </form> 
+                </div>
+
+				<div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Planeta/paula.jpg" alt="Paula">
+                    <p>Paula</p>
+                    <form action="../PrestamoLibro.jsp" method="post">	
+                        <button class="button_AgregarLibro" type="submit" name="titulo" value= "Paula">
+                            <input type="hidden" name="descripcion" value="Un emotivo relato autobiografico sobre la enfermedad y muerte de la hija de la autora, Paula, mezclado con la historia de la familia Allende. ">
+        					<input type="hidden" name="imagen" value="Imagenes/Planeta/paula.jpg"> <!-- URL de la imagen -->
+                            Agregar
+                        </button>
+                    </form>
+                </div>
+
+				<div class="book grid--row">
+                    <img class="Portada_autor" src="../Imagenes/Planeta/Veronika decide morir.jpg" alt="Verónika decide morir">
+                    <p>Verónika decide morir</p>
+                    <form action="../PrestamoLibro.jsp" method="post">	
+                        <button class="button_AgregarLibro" type="submit" name="titulo" value= "Veronika decide morir">
+                            <input type="hidden" name="descripcion" value="Veronika, una joven que intenta suicidarse y despierta en una clinica psiquiatrica, donde descubre las verdaderas razones para vivir.">
+        					<input type="hidden" name="imagen" value="Imagenes/Planeta/Veronika decide morir.jpg"> <!-- URL de la imagen -->
+                            Agregar
+                        </button>
+                    </form> 
+                </div>
+            </article>
+        </section>
+
+		<footer>
+			<div class="logo_footer">
+				<img src="../Imagenes/Logo.png" alt="Libre Praesto Logo">
+			</div>
+            <nav id="PiePag">
+                <ul id="Submenu">
+                    <li class="LinkSubmenu"><a href="../Inicio.html">Inicio</a></li>
+                    <li class="LinkSubmenu"><a href="../PrestamoLibro.jsp">Pedir Libros</a></li>
+                    <li class="LinkSubmenu"><a href="../HistorialPrestamo.jsp">Historial de Prestamos</a></li>
+                    <li class="LinkSubmenu"><a href="../Contactenos.html">Soporte</a></li>
+                </ul>
+				<a href="../login.html" class="logout-link">Logout</a>
+				<p id="copyright">© 2024 Libre Praesto. Todos los derechos reservados.</p>	
+			</nav>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,841 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/*Nombre de las variables que se utilizaran en todo el CSS*/
+:root {
+    --font-family-body: "Cabin", sans-serif;
+    --font-family-input: "Lato", sans-serif;
+    --font-family-titulo: "Poppins", sans-serif;
+
+    --font-weigth-input: 20px;
+    --font-weigth-titulo: 34px;
+  
+    --primary-color: #1A401F;
+    --secondary-color: #ffffff;
+    --font-color: #333;
+    --contrast-dark-color: #000000;
+    --contrast-light-color: #573221;
+    
+    --font-size-form-fieldset: 18px;
+}
+
+/*Estilo aplicado a todo el cuerpo del sitio web*/
+body {
+    margin: 0px; 
+    padding: 0px; 
+    border: none;
+    font-family: var(--font-family-body);
+    overflow-x: hidden;
+}
+
+.registro {
+    padding: 80px;
+}
+
+.login {
+    padding-top: 160px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.flex {
+    display: flex;
+}
+  
+.flex--center {
+    align-items: center;
+    justify-content: center;
+}
+  
+.flex--row {
+    flex-direction: row;
+}
+
+.flex--column {
+    flex-direction: column;
+}
+
+.grid--column{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.grid-column--prestamo{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.display--grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.grid--row{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.display_grid--row{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Estilo para el header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header .logo_menu img {
+    height: 70px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-weight: bold;
+}
+
+nav ul li a.btn-pedir-libro {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 35px;
+    border-radius: 5px;
+}
+
+/* Estilo para el enlace que contiene el icono de búsqueda */
+.search-icon {
+    margin-left: 5px;
+}
+
+/* Estilo para la imagen del icono */
+.icon {
+    width: auto;
+    height: 25px;
+}
+
+.ic_face, .ic_buscar{
+    margin-right: 65px;
+}
+
+/* banner ajustes*/
+#Titulo--banner{
+    margin-bottom: 50px;
+}
+
+#banner--total{
+    background-image: url(../Imagenes/Biblioteca.jpg);
+    height: 205px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.Cuadrado_titutlo--banner{
+    background-color: var(--secondary-color);
+    font-family: var(--font-family-titulo);
+    color: var(--primary-color);
+    font-size: var(--font-weigth-titulo);
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    max-width: 20%;
+    padding-top: 1px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-left: 25px;
+    position: absolute;
+    top: 240px;
+}
+
+/*
+Estilos aplicados para la página de RegistroUsuario
+
+Estilo para el fondo de la página*/
+#Background{
+    background-image: url(../Imagenes/Biblioteca.jpg);
+    height: 600px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+/*Estilo para hacer al recuadro donde esta el logo y los campos de registro*/
+.cuadrado_logo {
+    background-color: var(--primary-color);
+    width: 100%;
+    max-width: 22%;
+}
+
+.cuadrado_logo--registro{
+    padding-top: 147px;
+    padding-bottom: 146px;
+}
+
+.cuadrado_logo--login {
+    padding-top: 21px;
+    padding-bottom: 20px;
+}
+
+#cuadrado {
+    background-color: var(--secondary-color);
+    width: 100%;
+    max-width: 35%;
+    padding: 10px;
+}
+
+/*Estilo que modifica el tamaño del logo*/
+#logo{
+	height: 250px;
+	width: auto;
+}
+
+/*Estilo aplicado para los subtítulos de las páginas: RegistroUsuario*/
+#Subtítulo {
+    font-family: var(--font-family-titulo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: var(--font-weigth-input);
+  }
+
+/*Estilo para los div que contienen los labels y los inputs de todos los registros*/  
+.input-container {
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 25x;
+}
+
+/*Estilo aplicado al registro de la fecha de la página RegistroUsuario*/
+.dob {
+    margin-bottom: 20px;
+}
+
+.dob-fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dob-fields input {
+    width: 30%;
+    margin-right: 5px;
+    box-sizing: border-box;
+    border: 1px solid var(--primary-color); 
+    border-radius: 50px; 
+    padding-left: 15px;
+    height: 40px;
+}
+
+/*Estilo aplicado a los input de tipo texto de todos los registros*/
+.input {
+    box-sizing: border-box;
+    border: 1px solid var(--primary-color); 
+    border-radius: 50px; 
+    padding-left: 15px;
+    height: 40px;
+    width: 350px;
+}
+
+.input-label {
+    position: absolute;
+    color: var(--font-color);
+    top: 10px;
+    left: 40px;
+    font-size: var(--font-size-form-fieldset);
+    font-family: var(--font-family-input);
+    margin-bottom: 1rem;
+  }
+
+/*Estilo aplicado a los botones para enviar los registros de todas las páginas*/
+#buttons {
+    display: block;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    width: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: var(--secondary-color);
+    font-size: 18px; 
+    align-self: center;
+    text-align: center;
+}
+
+#leyenda{
+	text-align: center;
+}
+
+#link{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/*Estilo de la página PrestamoLibro*/
+#Título_ListaAñadidos, #Título-Historial--Prestamo{
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 35px;
+    font-family: var(--font-family-titulo);
+    font-size: var(--font-weigth-titulo);
+    color: var(--primary-color);
+}
+
+.Título-Libro_PrestamoLibro{
+    font-weight: bold;
+    font-size: var(--font-weigth-titulo);
+    font-family: var(--font-family-titulo);
+}
+
+.Portada_PrestamoLibro{
+    height: 194px;
+	width: auto;
+}
+
+.cuadrado_PrestamoLibro{
+    border-top: 0; /* Borde superior eliminado */
+    border-right: 0; /* Borde inferior eliminado */
+    border-left: 0; /* Borde izquierdo eliminado */
+    border-bottom-width: 0.5px; /* Ancho del borde derecho */
+    border-bottom-style: solid; /* Estilo del borde derecho */
+    border-bottom-color: var(--contrast-dark-color); /* Color del borde derecho */
+    margin: 25px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+.cuadrado_RealizarPedido{
+    margin: 25px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+.Contenido_PrestamoLibro{
+    padding-left: 50px;
+    padding-right: 80px;
+    width: 750px;
+}
+
+#Leyenda{
+    padding-right: 390px;
+    padding-bottom: 25px;
+    color: var(--font-color);
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.button_PrestamoLibro {
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    width: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: var(--secondary-color);
+    font-size: 18px; 
+    align-self: center;
+    text-align: center;
+}
+
+select {
+    width: 150px;
+    border: 0;
+    border-radius: 25px;
+    margin-bottom: 0;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--font-family-input);
+    font-size: var(--font-size-form-fieldset);
+}
+
+.formulario--input{
+    width: 200px;
+}
+
+.select--sucursal{
+    display: flex;
+    width: 200px;
+    border: 1px solid var(--contrast-dark-color);
+    border-radius: 25px;
+    margin-bottom: 50px;
+    background-color: var(--primary-color);
+    text-align: center;
+    justify-content: center;
+}
+
+/*Estilo para todos los autores*/
+#Titulo--autor{
+    margin-bottom: 50px;
+}
+
+#banner--autor{
+    background-image: url(../Imagenes/Biblioteca.jpg);
+    height: 205px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.Cuadrado_titutlo--autor{
+    background-color: var(--secondary-color);
+    font-family: var(--font-family-titulo);
+    color: var(--primary-color);
+    font-size: var(--font-weigth-titulo);
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    max-width: 20%;
+    padding-top: 1px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-left: 25px;
+    position: absolute;
+    top: 240px;
+}
+
+#Subtitulo--autor{
+    font-family: var(--font-family-titulo);
+    font-size: 26px;
+    text-align: center;
+    position: absolute;
+    left: 325px;
+}
+
+#foto_autor{
+    height: auto;
+    width: 230px;
+}
+
+#Nombre_autor{
+    font-weight: bold;
+    font-size: var(--font-weigth-titulo);
+    font-family: var(--font-family-titulo);
+}
+
+#Cuadrado_autor{
+    border-top: 0; /* Borde superior eliminado */
+    border-bottom: 0; /* Borde inferior eliminado */
+    border-left: 0; /* Borde izquierdo eliminado */
+    border-right-width: 0.5px; /* Ancho del borde derecho */
+    border-right-style: solid; /* Estilo del borde derecho */
+    border-right-color: var(--contrast-dark-color); /* Color del borde derecho */
+    width: 100%;
+    max-width: 15%;
+    height: 100%;
+    max-height: 60%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.Portada_autor{
+    height: 250px;
+    width: 180px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.book{
+    font-family: var(--font-family-titulo);
+    padding: 20px;
+    height: 350px;
+    width: 187px;
+    background-color: var(--secondary-color);
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.button_AgregarLibro {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 50px;
+    width: 90px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 13px; 
+    text-align: center;
+    margin: 0;
+}
+
+/*Estilo para la página de Historial Préstamo*/
+#cuadrado--Leyenda{
+    border-radius: 25px;
+    background-color: #A5A5A5;
+    padding: 1px;
+    width: 100%;
+    max-width: 50%;
+    margin-left: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#Subtitulo--Leyenda{
+    color: var(--font-color);
+    font-style: italic;
+    font-weight: lighter;
+    margin: 5px;
+    padding-left: 15px;
+}
+
+.table-container{
+    background-image: url(../Imagenes/FondoHistorial.png);
+    height: 100%; 
+    max-height: 80%;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    margin-top: 30px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    background: hsla(0, 0%, 95%, 1);
+    background: linear-gradient(0deg, hsla(0, 0%, 95%, 1) 0%, hsla(0, 0%, 65%, 1) 100%);
+    background: -moz-linear-gradient(0deg, hsla(0, 0%, 95%, 1) 0%, hsla(0, 0%, 65%, 1) 100%);
+    background: -webkit-linear-gradient(0deg, hsla(0, 0%, 95%, 1) 0%, hsla(0, 0%, 65%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F1F1F1", endColorstr="#A5A5A5", GradientType=1 );
+    margin-left: 60px;
+}
+  
+th, td {
+    padding: 10px;
+    border: 1px solid var(--font-color);
+    text-align: center;
+    border-collapse: collapse;
+}
+
+/* inicio css*/
+#Link-banner--Login a{
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    font-family: var(--font-family-titulo);
+    color: var(--contrast-light-color);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+    max-width: 12%;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    border-bottom-left-radius: 25px;
+    margin-left: 20px;
+    position: absolute;
+    right: 0;
+    top: 94px;
+}
+
+#Link-banner--Registro a{
+    text-decoration: none;
+    font-family: var(--font-family-titulo);
+    color: var(--contrast-light-color);
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-right: 35px;
+    position: absolute;
+    right: 0;
+    top: 94px;
+}
+
+#Submenu--banner{
+    text-decoration: none;
+    background-color: var(--contrast-dark-color);
+    font-family: var(--font-family-titulo);
+    color: var(--secondary-color);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    max-width: 10%;
+    padding-left: 10px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    margin-left: 20px;
+    position: absolute;
+    left: 40px;
+    top: 422px;
+}
+
+.container {
+    display: flex;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.submenu {
+    text-align: center;
+    height: 300px;
+    width: 230px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    margin-top: 60px;
+}
+
+#img-item{
+    height: 180px;
+    width: 230px;
+}
+
+.submenu-item {
+    padding: 15px;
+    border-top: 0; /* Borde superior eliminado */
+    border-right: 0; /* Borde inferior eliminado */
+    border-left: 0; /* Borde izquierdo eliminado */
+    border-bottom-width: 0.5px; /* Ancho del borde derecho */
+    border-bottom-style: solid; /* Estilo del borde derecho */
+    border-bottom-color: var(--font-color); /* Color del borde derecho */
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.subtitulos a{
+    font-size: var(--font-weigth-input);
+    font-family: var(--font-family-titulo);
+    color: var(--contrast-dark-color);
+    text-decoration: none;
+    margin: 5px;
+}
+
+#Titulo--Inicio, #Titulo--Autor, #Titulo--Editorial, #Titulo--Catalogo{
+    font-size: var(--font-weigth-titulo);
+    font-family: var(--font-family-titulo);
+    color: var(--primary-color);
+}
+
+hr{
+    width: 100%;
+    max-width: 70%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.img-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-content {
+    width: 1300px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.Autor--Inicio, .Editorial--Inicio{
+    font-family: var(--font-family-titulo);
+    padding: 20px;
+    height: 280px;
+    width: 187px;
+    background-color: var(--secondary-color);
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.Portada-Autor--Inicio, .Portada-Editorial--Inicio{
+    height: 200px;
+    width: 190px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.news-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-item {
+    height: 300px;
+    width: 270px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    padding: 20px;
+}
+
+iframe{
+    height: 150px;
+    width: 270px;
+    margin-bottom: 6px;
+}
+
+.Link--noticia{
+    font-family: var(--font-family-titulo);
+    text-decoration: none;
+    font-size: 11px;
+    color: var(--primary-color);
+}
+
+.descripcion{
+    font-size: 12px;
+    text-align: justify;
+}
+
+.news-item img {
+    width: 270px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 6px;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid var(--font-color);
+}
+
+.section-title {
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px 0;
+}
+
+.section-title h2 {
+    margin: 0;
+}
+
+/*Soporte*/
+.integrante {
+    display: flex;
+    align-items: center;
+    margin: 10px 70px;
+    padding: 10px;
+}
+
+.integrante.reverse {
+    flex-direction: row-reverse;
+}
+
+.foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+.info {
+    flex: 1;
+    margin-right: 220px;
+}
+
+.info2 {
+    flex: 1;
+    margin-left: 220px;
+}
+
+/*Estilo para el catalogo*/
+#Titulo--Catalogo{
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+#Descripcion--Catalogo{
+    margin-left: 80px;
+}
+
+.Portada--catalogo{
+    height: 250px;
+    width: 180px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.book{
+    font-family: var(--font-family-titulo);
+    padding: 20px;
+    height: 350px;
+    width: 187px;
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.Libro--catalogo{
+    margin: 0;
+}
+
+.Libro--autor{
+    margin: 0;
+}
+
+/*Estilo para el footer*/
+footer{
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#Submenu{
+    display: flex; 
+    justify-content: center;
+    padding-left: 0px;
+    list-style-type: none; 
+}
+
+.LinkSubmenu a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+#copyright{
+	text-align: center;
+	padding-top: 20px;
+    color: var(--secondary-color);
+}
+
+.logo_footer img{
+    position: absolute;
+    left: 40px;
+    height: 70px;
+}
+
+/* Estilo para el enlace de logout */
+footer .logout-link {
+    position: absolute;
+    right: 20px; /* Ajusta este valor según sea necesario */
+    color: var(--secondary-color);
+    right: 40px;
+    text-decoration: underline;
+    font-weight: bold;
+}
