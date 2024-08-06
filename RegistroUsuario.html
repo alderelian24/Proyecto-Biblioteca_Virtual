@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registro - Libre Praesto</title>
+        <link rel="stylesheet" type="text/css" href="CSS/normalize.css">
+        <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+    </head>
+
+    <body id="Background">    <!-- Formulario para el registro de usuarios -->
+        <section class="registro flex flex--row flex--center">
+            <div class="cuadrado_logo cuadrado_logo--registro">
+                <img id="logo" src="Imagenes/Logo cuadrado.png" alt="Logo de Libre Praesto">
+            </div>
+            <article id="cuadrado">
+                <p id="Subtítulo">¡Registrate y descubre un mundo sin límites!</p>
+                    <form action="RespuestaRegistro.jsp" method="post" class="flex flex--column"> 
+        				<!-- Campo del nombre -->
+                    
+                        <div class="input-container" data-tipo="Nombre">
+                            <input class="input" type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                        </div>
+        				<!-- Campo del Apellido -->
+                        <div class="input-container" data-tipo="Apellido">
+                            <input class="input" type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                        </div>
+        				<!-- Campo del correo-->
+                    
+                        <div class="input-container" data-tipo="Correo">
+                            <input class="input" type="text" id="correo" name="correo" placeholder="Correo" required>
+                        </div>
+        				<!-- Campo de la contraseña -->
+
+                        <div class="input-container" data-tipo="Contraseña">
+                            <input class="input" type="password" id="contraseña" name="password" placeholder="Contraseña" required>
+                        </div>
+        				<!-- Campo del telefono -->
+                    
+                        <div class="input-container" data-tipo="Telefono">
+                            <input class="input" type="text" id="telefono" name="telefono" placeholder="Teléfono" required>
+                        </div>
+        				<!-- Campo de la fecha de nacimiento -->
+
+                        <div class="dob" data-tipo="fechaNacimiento">
+                            <label for="fechaNacimiento">Fecha de nacimiento:</label>
+							<div class="dob-fields" data-tipo="fechaNacimiento">                            
+		                        <input type="number" name="dia" id="dia" placeholder="Día" required>
+		                        <input type="number" name="mes" id="mes" placeholder="Mes" required>
+		                        <input type="number" name="ano" id="año" placeholder="Año" required>
+                        	</div>
+                        </div>
+                        <button id="buttons" type="submit">Registrarse</button>
+                    </form>
+                    <div id="leyenda">
+                        <p>¿Ya tienes una cuenta?</p>
+                        <a id="link" href="login.html">Iniciar Sesión</a>
+                    </div>
+            </article>
+        </section>
+    </body>
+</html>

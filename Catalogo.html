@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Catálogo - Libre Praesto</title>
+		<link rel="stylesheet" type="text/css" href="CSS/normalize.css">
+		<link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+    </head>
+
+    <body>
+    <!-- Sección del encabezado de la página -->    
+		<header>
+			<div class="logo_menu">
+				<img src="Imagenes/Logo.png" alt="Libre Praesto Logo">
+			</div>
+			<nav>
+			<!-- Menú de navegación -->
+				<ul>
+					<li><a href="Inicio.html">Inicio</a></li>
+					<li><a href="PrestamoLibro.jsp">Prestamo de libros</a></li>
+					<li><a href="HistorialPrestamo.jsp">Historial de libros</a></li>
+					<li><a href="Contactenos.html">Soporte</a></li>
+					<!-- Íconos de búsqueda y redes sociales -->
+					<li>
+						<a href="https://www.google.com" class="search-icon">
+							<img src="Imagenes/ic_search.png" alt="Buscar" class="icon ic_buscar">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com" class="search-icon">
+							<img src="Imagenes/ic_instagram.png" alt="Instagram" class="icon">
+						</a>
+					</li>
+						<a href="https://www.facebook.com" class="search-icon">
+							<img src="Imagenes/ic_facebook.png" alt="Facebook" class="icon ic_face">
+						</a>
+					<li>
+						<a href="Catalogo.html" class="btn-pedir-libro">Catálogo</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+			<!-- Seccion principal con el título y banner -->
+		<main id="Titulo--banner">
+			<img src="Imagenes/banner de inicio.jpeg" alt="Banner de la página catálogo">
+			<h1 id="Titulo--Catalogo">CATÁLOGO</h1>
+			<p id="Descripcion--Catalogo">
+			Recorre nuestros estantes virtuales repletos de libros, cuidadosamente seleccionados para satisfacer las más diversas 
+			preferencias. 
+			<br>
+			En Libre Praesto encontrarás el libro perfecto para cada ocasión y estado de ánimo.
+			</p>
+		</main>
+		
+		<!-- Sección de la cuadrícula de libros -->
+		<section class="display--grid">
+		<!-- Cada libro es un div con clase 'book' -->		
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Isabel/afrodita.jpg" alt="Portada de Afrodita">
+				<p class="Libro--catalogo">Afrodita</p>
+				<p class="Libro--autor">Isabel Allende</p>
+				<form action="PrestamoLibro.jsp" method="post">			
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "Afrodita">
+						<input type="hidden" name="descripcion" value="Un libro que combina ensayos y recetas sobre la comida afrodisiaca y el erotismo, explorando la sensualidad y el placer. ">
+        				<input type="hidden" name="imagen" value="Imagenes/Planeta/afrodita.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form>
+			</div>
+	
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Paulo/Brida.jpg" alt="Portada de Brida">
+				<p class="Libro--catalogo">Brida</p>
+				<p class="Libro--autor">Paulo Coelho</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "Brida">
+						<input type="hidden" name="descripcion" value="La historia de una joven irlandesa en busca de conocimiento espiritual, explorando la brujeria y el amor a traves de su aprendizaje. ">
+        				<input type="hidden" name="imagen" value="Imagenes/Planeta/Brida.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Gabriel/cien anos de soledad.jpg" alt="Portada de Cien años de soledad">
+				<p class="Libro--catalogo">Cien años de soledad</p>
+				<p class="Libro--autor">Gabriel García Márquez</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "Cien anos de soledad">
+						<input type="hidden" name="descripcion" value="Una saga epica de la familia Buendia en el pueblo ficticio de Macondo, explorando temas de soledad y destino a lo largo de siete generaciones.">
+        				<input type="hidden" name="imagen" value="Imagenes/Sudamericana/cien anos de soledad.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Mario/conversacion en la catedral.jpg" alt="Portada de Conversacion en la catedral">
+				<p class="Libro--catalogo">Conversación en la catedral</p>
+				<p class="Libro--autor">Mario Vargas Llosa</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "Conversacion en la catedral">
+						<input type="hidden" name="descripcion" value="Un analisis profundo de la sociedad peruana bajo la dictadura de Odria, a traves de una conversacion entre dos antiguos amigos.">
+        				<input type="hidden" name="imagen" value="Imagenes/SeixBarral/conversacion en la catedral.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Gabriel/cronicas de una muerte.jpeg" alt="Portada de Cronica de una muerte anunciada">
+				<p class="Libro--catalogo">Crónica de una muerte anunciada</p>
+				<p class="Libro--autor">Gabriel García Márquez</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "Cronica de una muerte anunciada">
+						<input type="hidden" name="descripcion" value="Un relato sobre el asesinato de Santiago Nasar, narrado desde multiples perspectivas y basado en hechos reales.">
+       					<input type="hidden" name="imagen" value="Imagenes/Sudamericana/cronicas de una muerte.jpeg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Isabel/de amor y de sombra.jpg" alt="Portada de De amor y de sombra">
+				<p class="Libro--catalogo">De amor y de sombra</p>
+				<p class="Libro--autor">Isabel Allende</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "De amor y de sombra">
+						<input type="hidden" name="descripcion" value="Una novela de amor y resistencia en un pais latinoamericano bajo una dictadura, protagonizada por Irene Beltran y Francisco Leal.">
+       					<input type="hidden" name="imagen" value="Imagenes/Planeta/de amor y de sombra.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Paulo/El alquimista.jpg" alt="Portada de El alquimista">
+				<p class="Libro--catalogo">El alquimista</p>
+				<p class="Libro--autor">Paulo Coelho</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "El alquimista">
+						<input type="hidden" name="descripcion" value="La historia de Santiago, un joven pastor que busca un tesoro en las piramides de Egipto, descubriendo su leyenda personal y el significado de la vida.">
+       					<input type="hidden" name="imagen" value="Imagenes/Paulo/El alquimista.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Gabriel/el amor en tiempos de colera.jpeg" alt="Portada de El amor en los tiempos del cólera">
+				<p class="Libro--catalogo">El amor en los tiempos del cólera</p>
+				<p class="Libro--autor">Gabriel Gabriel Márquez</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "El amor en los tiempos del colera">
+						<input type="hidden" name="descripcion" value="Una historia de amor inquebrantable entre Fermina Daza y Florentino Ariza, que perdura a lo largo de decadas y adversidades.">
+       					<input type="hidden" name="imagen" value="Imagenes/Gabriel/el amor en tiempos de colera.jpeg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Gabriel/el coronel no tiene.jpg" alt="Portada de El coronel no tiene quien le escriba">
+				<p class="Libro--catalogo">El coronel no tiene quien le escriba</p>
+				<p class="Libro--autor">Gabriel García Márquez</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "El coronel no tiene quien le escriba">
+						<input type="hidden" name="descripcion" value="La historia de un viejo coronel que espera en vano una carta del gobierno que le otorgue una pension prometida.">
+       					<input type="hidden" name="imagen" value="Imagenes/Gabriel/el coronel no tiene.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Carlos/El juego del angel.jpg" alt="Portada de El juego del ángel">
+				<p class="Libro--catalogo">El juego del ángel</p>
+				<p class="Libro--autor">Carlos Ruiz Zafón</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "El juego del angel">
+						<input type="hidden" name="descripcion" value="Un joven escritor, David Martin, recibe una oferta para escribir un libro que le cambiara la vida, envuelto en un oscuro y misterioso entramado.">
+       					<input type="hidden" name="imagen" value="Imagenes/Carlos/El juego del angel.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Carlos/El laberinto de los espíritus.jpg" alt="Portada de El laberinto de los espíritus">
+				<p class="Libro--catalogo">El laberinto de los espíritus</p>
+				<p class="Libro--autor">Carlos Ruiz Zafón</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "El laberinto de los espiritus">
+						<input type="hidden" name="descripcion" value="La conclusion de la saga del Cementerio de los Libros Olvidados, con Alicia Gris desentranando secretos y conectando todos los hilos de la historia. ">
+       					<input type="hidden" name="imagen" value="Imagenes/Carlos/El laberinto de los espíritus.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Paulo/El Maktub.jpg" alt="Portada de El Maktub">
+				<p class="Libro--catalogo">El Maktub</p>
+				<p class="Libro--autor">Paulo Coelho</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "Maktub">
+						<input type="hidden" name="descripcion" value="Una coleccion de reflexiones y pensamientos inspirados en diferentes culturas y filosofias, ofreciendo lecciones de vida y sabiduria.">
+       					<input type="hidden" name="imagen" value="Imagenes/Paulo/El Maktub.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Paulo/El peregrino de Compostela.jpg" alt="Portada de El peregrino de Compostela">
+				<p class="Libro--catalogo">El peregrino de Compostela</p>
+				<p class="Libro--autor">Paulo Coelho</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "El peregrino de Compostela">
+						<input type="hidden" name="descripcion" value="Un relato autobiográfico sobre el viaje de Paulo Coelho por el Camino de Santiago y las lecciones espirituales que aprende en el camino.">
+       					<input type="hidden" name="imagen" value="Imagenes/Paulo/El peregrino de Compostela.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Mario/El pez en el agua.jpg" alt="Portada de El pez en el agua">
+				<p class="Libro--catalogo">El pez en el agua</p>
+				<p class="Libro--autor">Mario Vargas Llosa</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "El pez en el agua">
+						<input type="hidden" name="descripcion" value="Una autobiografia que abarca la infancia de Vargas Llosa y su campana presidencial en Peru.">
+       					<input type="hidden" name="imagen" value="Imagenes/Mario/El pez en el agua.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Carlos/El prisionero del cielo.jpg" alt="Portada de El prisionero del cielo">
+				<p class="Libro--catalogo">El prisionero del cielo</p>
+				<p class="Libro--autor">Carlos Ruiz Zafón</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "El prisionero del cielo">
+						<input type="hidden" name="descripcion" value="Continua la saga de Daniel Sempere y Fermin Romero de Torres, revelando secretos del pasado y enfrentando nuevos peligros.">
+       					<input type="hidden" name="imagen" value="Imagenes/Carlos/El prisionero del cielo.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Mario/El sueño del celta.jpg" alt="Portada de El sueño del celta">
+				<p class="Libro--catalogo">El sueño del celta</p>
+				<p class="Libro--autor">Mario Vargas Llosa</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "El sueno del celta">
+						<input type="hidden" name="descripcion" value="La biografia novelada de Roger Casement, un diplomatico britanico que denuncio las atrocidades coloniales en el Congo y la Amazonia, y su lucha por la independencia irlandesa.">
+       					<input type="hidden" name="imagen" value="Imagenes/Mario/El sueño del celta.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Isabel/eva luna.jpg" alt="Portada de Eva Luna">
+				<p class="Libro--catalogo">Eva Luna</p>
+				<p class="Libro--autor">Isabel Allende</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "Eva Luna">
+						<input type="hidden" name="descripcion" value="La vida de Eva Luna, una joven huerfana con un talento para contar historias, en un pais sudamericano ficticio.">
+       					<input type="hidden" name="imagen" value="Imagenes/Isabel/eva luna.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Isabel/casa de los espiritus.jpg" alt="Portada de La casa de los espíritus">
+				<p class="Libro--catalogo">La casa de los espíritus</p>
+				<p class="Libro--autor">Isabel Allende</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "La casa de los espiritus">
+						<input type="hidden" name="descripcion" value=" Una saga familiar que mezcla realismo magico y politica, centrada en la vida de la familia Trueba a lo largo de varias generaciones. ">
+       					<input type="hidden" name="imagen" value="Imagenes/Isabel/casa de los espiritus.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Mario/la casa verde.jpeg" alt="Portada de La casa verde">
+				<p class="Libro--catalogo">La casa verde</p>
+				<p class="Libro--autor">Mario Vargas Llosa</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "La casa verde">
+						<input type="hidden" name="descripcion" value="La historia de una casa de citas en la selva peruana y sus efectos en las vidas de varios personajes a lo largo de las decadas.">
+       					<input type="hidden" name="imagen" value="Imagenes/Mario/la casa verde.jpeg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Mario/la ciudad y los perros.jpeg" alt="Portada de La ciudad y los perros">
+				<p class="Libro--catalogo">La ciudad y los perros</p>
+				<p class="Libro--autor">Mario Vargas Llosa</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "La ciudad y los perros">
+						<input type="hidden" name="descripcion" value=" Un retrato crudo y realista de la vida en un internado militar en Lima, explorando la violencia y la corrupcion. ">
+       					<input type="hidden" name="imagen" value="Imagenes/Mario/la ciudad y los perros.jpeg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Mario/La_fiesta_del_chivo.jpg" alt="Portada de La fiesta del chivo">
+				<p class="Libro--catalogo">La fiesta del chivo</p>
+				<p class="Libro--autor">Mario Vargas Llosa</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "La fiesta del chivo">
+						<input type="hidden" name="descripcion" value="Un relato sobre la dictadura de Rafael Trujillo en la Republica Dominicana y su impacto en las vidas de varios personajes.">
+       					<input type="hidden" name="imagen" value="Imagenes/Mario/La_fiesta_del_chivo.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Mario/la guerra del fin del mundo.jpg" alt="Portada de La guerra del fin del mundo">
+				<p class="Libro--catalogo">La guerra del fin del mundo</p>
+				<p class="Libro--autor">Mario Vargas Llosa</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "La guerra del fin del mundo">
+						<input type="hidden" name="descripcion" value="Una recreación épica de la Guerra de Canudos en Brasil, donde un grupo de rebeldes se enfrenta al gobierno republicano.">
+       					<input type="hidden" name="imagen" value="Imagenes/Mario/la guerra del fin del mundo.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Carlos/La sombra del viento.jpg" alt="Portada de La sombra del viento">
+				<p class="Libro--catalogo">La sombra del viento</p>
+				<p class="Libro--autor">Carlos Ruiz Zafón</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "La sombra del viento">
+						<input type="hidden" name="descripcion" value="La historia de Daniel Sempere, que descubre un misterioso libro en el Cementerio de los Libros Olvidados y se ve envuelto en un misterio literario.">
+       					<input type="hidden" name="imagen" value="Imagenes/Carlos/La sombra del viento.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Mario/La tía Julia y el escribidor.jpg" alt="Portada de La tía Tula">
+				<p class="Libro--catalogo">La tía Tula</p>
+				<p class="Libro--autor">Mario Vargas Llosa</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "La tia Julia">
+						<input type="hidden" name="descripcion" value="Una novela semi-autobiografica sobre la relacion del joven escritor Marito con su tia politica Julia y su mentor literario Pedro Camacho.">
+       					<input type="hidden" name="imagen" value="Imagenes/Mario/La tía Julia y el escribidor.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Mario/Lituma en los andes.jpg" alt="Portada de Lituma en los Andes">
+				<p class="Libro--catalogo">Lituma en los Andes</p>
+				<p class="Libro--autor">Mario Vargas Llosa</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "Lituma en los Andes">
+						<input type="hidden" name="descripcion" value="El teniente Lituma investiga la desaparicion de tres hombres en una remota comunidad andina, enfrentando supersticiones y peligros.">
+       					<input type="hidden" name="imagen" value="Imagenes/Mario/Lituma en los andes.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Carlos/Marina.jpg" alt="Portada de Marina">
+				<p class="Libro--catalogo">Marina</p>
+				<p class="Libro--autor">Carlos Ruiz Zafón</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "Marina">
+						<input type="hidden" name="descripcion" value="La historia de Oscar Drai, un joven que se embarca en una aventura sobrenatural en la Barcelona de los anos setenta. ">
+       					<input type="hidden" name="imagen" value="Imagenes/Carlos/Marina.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Gabriel/memorias de mi.jpg" alt="Portada de Memoria de mis putas tristes">
+				<p class="Libro--catalogo">Memoria de mis putas tristes</p>
+				<p class="Libro--autor">Gabriel García Márquez</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "Memoria de mis putas tristes">
+						<input type="hidden" name="descripcion" value=" La historia de un anciano periodista que se enamora por primera vez de una joven prostituta en su cumpleanos numero noventa. ">
+       					<input type="hidden" name="imagen" value="Imagenes/Gabriel/memorias de mi.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Mario/pantaleon y las visitadoras.jpg" alt="Portada de Pantaleón y las visitadoras">
+				<p class="Libro--catalogo">Pantaleón y las visitadoras</p>
+				<p class="Libro--autor">Mario Vargas Llosa</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "Pantaleon y las visitadoras">
+						<input type="hidden" name="descripcion" value="Una satira sobre la burocracia militar y la moralidad, protagonizada por el capitan Pantaleon Pantoja y su mision secreta.">
+       					<input type="hidden" name="imagen" value="Imagenes/Mario/pantaleon y las visitadoras.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Isabel/paula.jpg" alt="Portada de Paula">
+				<p class="Libro--catalogo">Paula</p>
+				<p class="Libro--autor">Isabel Allende</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "Paula">
+						<input type="hidden" name="descripcion" value="Un emotivo relato autobiografico sobre la enfermedad y muerte de la hija de la autora, Paula, mezclado con la historia de la familia Allende. ">
+       					<input type="hidden" name="imagen" value="Imagenes/Isabel/paula.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+
+		<!-- Sección de la cuadrícula de libros -->
+			<div class="book display_grid--row">
+				<img class="Portada--catalogo" src="Imagenes/Paulo/Veronika decide morir.jpg" alt="Portada de Verónika">
+				<p class="Libro--catalogo">Verónika</p>
+				<p class="Libro--autor">Paulo Coelho</p>
+				<form action="PrestamoLibro.jsp" method="post">	
+					<button class="button_AgregarLibro" type="submit" name="titulo" value= "Veronika decide morir">
+						<input type="hidden" name="descripcion" value="Veronika, una joven que intenta suicidarse y despierta en una clinica psiquiatrica, donde descubre las verdaderas razones para vivir.">
+       					<input type="hidden" name="imagen" value="Imagenes/Paulo/Veronika decide morir.jpg"> <!-- URL de la imagen -->
+						Agregar
+					</button>
+				</form> 
+			</div>
+		</section>
+
+        <footer>
+			<div class="logo_footer">
+				<img src="Imagenes/Logo.png" alt="Libre Praesto Logo">
+			</div>
+            <nav id="PiePag">
+                <ul id="Submenu">
+                    <li class="LinkSubmenu"><a href="Inicio.html">Inicio</a></li>
+                    <li class="LinkSubmenu"><a href="PrestamoLibro.jsp">Pedir Libros</a></li>
+                    <li class="LinkSubmenu"><a href="HistorialPrestamo.jsp">Historial de Prestamos</a></li>
+                    <li class="LinkSubmenu"><a href="Contactenos.html">Soporte</a></li>
+                </ul>
+				<a href="login.html" class="logout-link">Logout</a>
+				<p id="copyright">© 2024 Libre Praesto. Todos los derechos reservados.</p>	
+			</nav>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Iniciar Sesión - Libre Praesto</title>
+        <link rel="stylesheet" type="text/css" href="CSS/normalize.css">
+        <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+    </head>
+
+    <body id="Background">
+        <!-- Area del logo -->    
+        <section class="login flex flex--row flex--center">
+            <div class="cuadrado_logo cuadrado_logo--login">
+                <img id="logo" src="Imagenes/Logo cuadrado.png" alt="Logo de Libre Praesto">
+            </div>
+            <article id="cuadrado">         <!-- Campo de llenado del login -->
+                <p id="Subtítulo">¡Inicia sesión para continuar!</p>
+                <form action="ProcesoLogin.jsp" method="post" class="flex flex--column">
+                    <div class="input-container" data-tipo="Correo">
+                        <input class="input" type="text" id="correo" name="correo" placeholder="Correo" required>
+                    </div>
+                    <div class="input-container" data-tipo="Password">
+                        <input class="input" type="password" id="password" name="password" placeholder="Contraseña" required>
+                    </div>
+                    <button id="buttons" type="submit">Iniciar Sesión</button>
+                </form>
+                <div id="leyenda">
+                    <p>¿No tienes una cuenta?</p>
+                    <a id="link" href="RegistroUsuario.html">Registrarse</a>
+                </div>
+            </article>
+        </section>
+    </body>
+</html>
